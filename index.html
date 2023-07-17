@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="heading1">Date</h1>
+      <hr class="hr" />
+    </header>
+    <section class="controls">
+      <input
+        type="text"
+        id="taskInput"
+        placeholder="Enter your tasks"
+        autofocus
+      />
+      <button id="addButton">Submit</button>
+    </section>
+    <div class="tasks">
+      <div class="page">
+        <section class="title">
+          <h3>Pending Tasks</h3>
+        </section>
+        <ul id="pendingTasks"></ul>
+      </div>
+      <button id="completeTaskButton">
+        <img class="completeTaskImg" src="./images/images.png" alt="arrow" />
+      </button>
+      <div class="page">
+        <section class="title">
+          <h3>Completed Tasks</h3>
+        </section>
+        <ul class="completedTasks"></ul>
+      </div>
+    </div>
+    <section class="modify">
+      <button id="editButton">Edit</button>
+      <button id="deleteButton">Delete</button>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
