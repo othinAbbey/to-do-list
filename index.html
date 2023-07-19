@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <h1 id="heading1">Date</h1>
+      <h1 id="heading1">Default heading</h1>
       <hr class="hr" />
     </header>
     <section class="controls">
@@ -25,21 +25,21 @@
         <section class="title">
           <h3>Pending Tasks</h3>
         </section>
-        <ul id="pendingTasks"></ul>
+        <ul id="pendingTasks" onclick="selectTask(event)"></ul>
       </div>
-      <button id="completeTaskButton">
+      <button id="completeTaskButton" onclick="completeTask()">
         <img class="completeTaskImg" src="./images/images.png" alt="arrow" />
       </button>
       <div class="page">
         <section class="title">
           <h3>Completed Tasks</h3>
         </section>
-        <ul class="completedTasks"></ul>
+        <ul id="completedTasks"></ul>
       </div>
     </div>
     <section class="modify">
-      <button id="editButton">Edit</button>
-      <button id="deleteButton">Delete</button>
+      <button id="editButton" onclick="editTask()">Edit</button>
+      <button id="deleteButton" onclick="deleteTask()">Delete</button>
     </section>
     <script src="script.js"></script>
   </body>

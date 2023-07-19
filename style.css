@@ -1,83 +1,177 @@
-#heading1 {
-  padding-left: 10px;
-  margin-bottom: 0px;
-}
-.hr {
-  height: 10px;
-  background: darkolivegreen;
-  margin: 0px;
-  padding-left: 10px;
-}
-.controls {
-  display: flex;
-  margin: 20px;
-  gap: 30px;
-}
+@media only screen and (min-width: 600px) {
+  #heading1 {
+    padding-left: 10px;
+    margin-bottom: 0px;
+    content: "";
+  }
+  .hr {
+    height: 10px;
+    background: darkolivegreen;
+    margin: 0px;
+    padding-left: 10px;
+  }
+  .controls {
+    display: flex;
+    margin: 20px;
+    gap: 30px;
+  }
 
-.title h3 {
-  background: rgb(226, 183, 103);
-  color: black;
-  margin: 0%;
-}
+  .title h3 {
+    background: rgb(226, 183, 103);
+    color: black;
+    margin: 0%;
+  }
 
-.tasks {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  margin: 20px;
-  /* margin: 20px; */
-}
+  .tasks {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 20px;
+    margin: 20px;
+  }
+  .page {
+    flex: 1;
+    border: 1px solid #ccc;
+  }
 
-.page {
-  flex: 1;
-  border: 1px solid #ccc;
-}
+  h3 {
+    text-align: center;
+  }
 
-h3 {
-  text-align: center;
-}
+  ul {
+    list-style: none;
+    padding: 5px;
+  }
 
-ul {
-  list-style: none;
-  padding: 5px;
-}
+  li {
+    margin-bottom: 10px;
+  }
 
-li {
-  margin-bottom: 10px;
-}
+  #addButton {
+    background: lightgreen;
+    color: green;
+  }
+  #editButton {
+    background: darkgray;
+  }
+  #deleteButton {
+    background: red;
+  }
+  #completeTaskButton {
+    display: flex;
+    position: relative;
+    height: 26px;
+    padding: 0px;
+    margin: auto;
 
-#addButton {
-  background: lightgreen;
-  color: green;
-}
-#editButton {
-  background: darkgray;
-}
-#deleteButton {
-  background: red;
-}
-#completeTaskButton {
-  display: flex;
-  position: relative;
-  height: 26px;
-  padding: 0px;
-  margin: auto;
+    justify-items: center;
+  }
+  .completeTaskImg {
+    text-align: center;
+    padding-top: 0px;
+    margin: 0px;
+    width: 25px;
 
-  justify-items: center;
+    border: 50px;
+    border: yellowgreen;
+  }
+  .modify {
+    width: 125px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 20px;
+  }
+  .taskLi {
+    background-color: #f0f0f0;
+  }
 }
-.completeTaskImg {
-  text-align: center;
-  /* padding-top: 0px; */
-  /* margin: 0px; */
-  width: 25px;
+@media only screen and (max-width: 600px) {
+  #heading1::before {
+    padding-left: 10px;
+    margin-bottom: 0;
+    content: "";
+  }
 
-  /* border: 50px; */
-  border: yellowgreen;
-}
-.modify {
-  width: 125px;
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  margin: 20px;
+  .hr {
+    height: 10px;
+    background: darkolivegreen;
+    margin: 0;
+    padding-left: 10px;
+  }
+
+  .controls {
+    display: flex;
+    margin: 20px;
+    gap: 30px;
+  }
+
+  .title h3 {
+    background: rgb(226, 183, 103);
+    color: black;
+    margin: 0;
+  }
+
+  .tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 20px;
+  }
+
+  .page {
+    border: 1px solid #ccc;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+    padding: 5px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  #addButton {
+    background: lightgreen;
+    color: green;
+  }
+
+  #editButton {
+    background: darkgray;
+  }
+
+  #deleteButton {
+    background: red;
+  }
+
+  #completeTaskButton {
+    display: flex;
+    position: relative;
+    height: 26px;
+    padding: 0;
+    margin: auto;
+    justify-items: center;
+  }
+
+  .completeTaskImg {
+    text-align: center;
+    width: 25px;
+  }
+
+  .modify {
+    width: 125px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 20px;
+  }
+
+  .taskLi {
+    background-color: #f0f0f0;
+  }
 }
