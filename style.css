@@ -175,3 +175,18 @@
     background-color: #f0f0f0;
   }
 }
+footer {
+  background-color: darkgray;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
